@@ -7,7 +7,7 @@ You can use `wget`, `curl`, etc. with the following NCBI urls to get the tabular
 
 Most curation, *Reference Genomes*:
 
-- [reference prokaryote genomes](https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_reference_genomes.txt)
+- [reference prokaryote genomes]https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_reference_genomes.txt
 
 Medium curation, *Representative Genomes*:
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # import packages
-
+from Bio import Entrez
 # organism id as input
 
 # define function to get fasta & metadata for all that match the ncbi organism id
