@@ -8,7 +8,7 @@ Ryan Bartelme, PhD
 
 ### Pulling anvi'o docker image into Singularity
 
-**Start by using singularity to pull the image from dockerhub:**
+**Start by using singularity to pull the latest version of the anvi'o image from dockerhub:**
 
 ```bash
 singularity pull docker://meren/anvio
@@ -25,28 +25,42 @@ $ ls
 anvio_latest.sif
 ```
 
+The latest docker image of anvi'o will **NOT** have the databases configured. This is also an opportune time to design an experiment by creating your own docker image from the `meren/anvio:latest` docker image tag. 
+
+---
+## Making your own Dockerfile to modify anvi'o
+
+See an example: [Dockerfile](anvio-dbconfig/Dockerfile) this runs through the database configurations for anvi'o. (As of 03-25-21 this does not properly compile the 3d structure db's)
+
 ---
 
 ## Snakemake Workflows with Singularity
 
-Anvi'o has awesome snakemake workflows built in! This is the "end to end" approach for all your HPC or cloud compute needs.
+Anvi'o has awesome snakemake workflows built in! This is the "end-to-end" approach for all your HPC or cloud compute needs. 
+
+---
 
 ### Metagenomics
 
-**Example json input for Metagenomics Workflow:**
+**Running Snakemake Metagenomics workflow:**
+Steps:
+1. Execute Singularity Command
+2. That's it.
+
+
+`anvi-run-workflow -w metagenomics-workflow --get-default-config metagenomics-default.json`
+
+Now you can open the json file to edit the metagenomics workflow parameters to suit your analysis.
+
+Run the analysis and save the graph of the workflow.
+`anvi-run-workflow -w metagenomics-workflow -c metagenomics.json --save-workflow-graph`
+
+
+
+---
 
 ### Comparative Genomics
 
 **Example json input for Comparative Genomics Workflow:**
-
----
-
-## Executing single anvi'o processes
-
-Certain processes in anvi'o are computationally intensive, and others are not. Maybe you are interested in writing bash scripts to execute your anvi'o software needs. This section is for that kind of user. 
-
-### Ex 1
-
-### Ex 2
 
 ---
