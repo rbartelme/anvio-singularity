@@ -2,5 +2,4 @@ Bootstrap: docker
 
 From: rbartelme/anvio-pangenomics:latest
 
-%runscript
-	exec /opt/conda/envs/anvioenv/bin/anvioenv 
+
