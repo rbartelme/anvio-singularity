@@ -1,5 +1,5 @@
 {
-    "fasta_txt": "rough_fasta.txt",
+    "fasta_txt": "chryseo_fasta.txt",
     "anvi_gen_contigs_database": {
         "--project-name": "{group}",
         "--description": "",
