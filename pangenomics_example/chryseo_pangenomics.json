@@ -1,5 +1,5 @@
 {
-    "fasta_txt": "fasta.txt",
+    "fasta_txt": "rough_fasta.txt",
     "anvi_gen_contigs_database": {
         "--project-name": "{group}",
         "--description": "",
@@ -185,10 +185,8 @@
         "--align-with": "",
         "threads": ""
     },
-    "project_name": "",
-    "internal_genomes": "",
-    "external_genomes": "",
-    "sequence_source_for_phylogeny": "",
+    "project_name": "Chryseobacterium_Pangenome",
+    "external_genomes": "chryseobacterium-external-genomes.txt",
     "output_dirs": {
         "FASTA_DIR": "01_FASTA",
         "CONTIGS_DIR": "02_CONTIGS",
