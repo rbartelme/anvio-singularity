@@ -1,1 +1,7 @@
 *.sif
+pangenomics_example/01_FASTA
+pangenomics_example/02_CONTIGS
+pangenomics_example/01_PHYLOGENOMICS
+pangenomics_example/03_PAN
+pangenomics_example/00_LOGS
+.snakemake/
