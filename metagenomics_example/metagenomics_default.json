@@ -23,7 +23,7 @@
         "threads": 5,
         "--installed-hmm-profile": "",
         "--hmm-profile-dir": "",
-        "--also-scan-trnas": ""
+        "--also-scan-trnas": true
     },
     "anvi_run_kegg_kofams": {
         "run": true,
@@ -46,11 +46,6 @@
         "run": true,
         "threads": 6,
         "--scgs-taxonomy-data-dir": ""
-    },
-    "anvi_run_trna_scan": {
-        "run": true,
-        "threads": 6,
-        "--trna-cutoff-score": ""
     },
     "anvi_script_reformat_fasta": {
         "run": true,
