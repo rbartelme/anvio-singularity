@@ -23,7 +23,7 @@
         "threads": 5,
         "--installed-hmm-profile": "",
         "--hmm-profile-dir": "",
-        "--also-scan-trnas": ""
+        "--also-scan-trnas": true
     },
     "anvi_run_kegg_kofams": {
         "run": true,
@@ -46,11 +46,6 @@
         "run": true,
         "threads": 6,
         "--scgs-taxonomy-data-dir": ""
-    },
-    "anvi_run_trna_scan": {
-        "run": true,
-        "threads": 6,
-        "--trna-cutoff-score": ""
     },
     "anvi_script_reformat_fasta": {
         "run": true,
@@ -185,8 +180,8 @@
         "--align-with": "",
         "threads": ""
     },
-    "project_name": "Chryseobacterium_Pangenome",
-    "external_genomes": "chryseobacterium-external-genomes.txt",
+    "project_name": "Chryseobacterium_Pangenome_V3",
+    "external_genomes": "external-genomes.txt",
     "output_dirs": {
         "FASTA_DIR": "01_FASTA",
         "CONTIGS_DIR": "02_CONTIGS",
