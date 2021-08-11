@@ -121,7 +121,7 @@
     },
     "anvi_compute_genome_similarity": {
         "run": true,
-        "additional_params": "",
+        "additional_params": "--program fastANI --num-threads 50",
         "threads": ""
     },
     "gen_external_genome_file": {
